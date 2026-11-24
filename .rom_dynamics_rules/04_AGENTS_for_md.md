@@ -45,3 +45,17 @@ python test_blabla.py
   - structure ကို gray
 
 - markdown file ဖြစ်သော *.md တို့တွင် timestamp ပါသော markdown file များကို ထည့်သွင်း ရေတွက်ခြင်း md_lists.md ထဲထည့်ခြင်း မပြုလုပ်ရပါ။
+
+- Repo Root  directory အောက်ရှိ markdown file များရှိ python script များ run ပုံကို ပြသရာတွင် copy ကူးပြီး run မှာမို့ ```bash အစတွင် ```cd Repo Root``` ပါရမည်။ 
+
+- Repo Root  directory အောက်ရှိ python script များ run ပုံကို ဖေါ်ပြသည့် markdown ``bash ``` များတွင် 
+    - သက်ဆိုင်ရာ virtial environment များကို activate ( လိုအပ်ရင် install ) လုပ်ပြီးမှသာ run ရမည်။
+    - ros2 dependencies, အခြား dependencies များနှင့် confict မဖြစ်ရအောင် ```export PYTHONPATH=""``` လဲလုပ်ရမည်။
+    - ပထမဆုံး python script မ run မီ သက်ဆိုင်ရာ directory ထဲမှ clear_outputs_directory script run ပေးရမည်။
+    - python script များအားလုံး run ပြီးရင် virtual environment ကို deactivate လုပ်ရမည်။
+    
+- Repo Root  directory အောက်ရှိ markdown file များတွင် python script run ပုံကို ဖေါ်ပြရာတွင် gui ပါဝင်ရင် run သည့်ပုံစံကို gui ```bash ...```, cli ```bash ...```, test ```bash ...``` ခွဲပြီး ဖေါ်ပြပါ။ 
+
+- Repo Root  directory အောက်ရှိ  markdown file များတွင် python script run ပုံကို ဖေါ်ပြရာတွင် python script များ တွင် gui မပါဝင်ပါက run ရမည့် ပုံစံကို cli ```bash ...```, test ```bash ...``` ခွဲပြီး ဖေါ်ပြပါ။ 
+
+- ဒါတွေက command တွေကို copy ကူးရလွယ်အောင်, environment အရ run ရလွယ်အောင် လုပ်တာဖြစ်ပါတယ်။ 
